@@ -1,0 +1,13 @@
+target/
+*.log
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
+# Your own CV, candidate facts and any local config: personal data, never commit
+data/
+.claude/
+.env
+*.env
+application-local.yml

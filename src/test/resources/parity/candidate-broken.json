@@ -1,0 +1,8 @@
+{
+  "name": "Jordan Lee",
+  "email": "jordan.lee@example.org",
+  "phone_digits": "447700900123",
+  "current_employer": "Quarry Soft",
+  "employers": ["Quarry Soft", "Oakline"],
+  "name_variants": ["Jordan Lee"]
+}

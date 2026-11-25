@@ -1,0 +1,9 @@
+Title: Senior Data Engineer
+Min years: 6
+Knockout: Python, SQL, BigQuery
+Required: GCP, Dataproc, Dataflow, BigQuery, SQL, dbt, Python, Airflow, ETL, Git, data warehouse, data modeling
+Nice to have: Talend, Fivetran
+Source: https://www.getonbrd.com/empleos/data-science-analytics/data-engineer-gcp-dillo-tech-remote (Dillo.Tech for Applied Systems, remote AR/CL/CO/BR, CLOSED, kept as a data-role benchmark)
+
+Design and operate scalable data pipelines with automated quality checks on GCP, BigQuery, dbt and
+Airflow; build data models, optimise ETL performance, maintain monitoring and documentation.

@@ -1,0 +1,8 @@
+Title: Tech Lead
+Min years: 0
+Min lead years: 0
+Knockout: Python, English
+Required: Python, microservices, distributed systems, event-driven, Kafka, RabbitMQ, concurrency, SQL, REST, performance tuning, software architecture, mentoring, code review, testing, technical leadership, stakeholder management
+Nice to have: Django, Flask, PostgreSQL, Redis, AWS, Docker, Kubernetes, CI/CD, agile
+Constraints: relación de dependencia contract, Argentina
+Source: https://www.linkedin.com/jobs/view/4241246491/ (Fever, Argentina, LinkedIn, read 2026-11-24)

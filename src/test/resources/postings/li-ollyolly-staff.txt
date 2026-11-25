@@ -1,0 +1,7 @@
+Title: Staff Software Engineer
+Min years: 7
+Min lead years: 0
+Knockout: TypeScript, LLM, English
+Required: TypeScript, SQL, PostgreSQL, LLM, hallucination, llm evaluation, ai-assisted development, claude code, code review, mentoring, REST, software architecture
+Nice to have: llm-as-judge, pub/sub, gcp, rag
+Source: https://www.linkedin.com/jobs/view/4491583719/ (Olly Olly, remote Buenos Aires, LinkedIn, read 2026-11-24)

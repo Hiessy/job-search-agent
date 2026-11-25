@@ -1,0 +1,59 @@
+Alex Rivera
+
+Senior Backend Engineer & Tech Lead | Java, Spring Boot, Kafka, AWS
+
+Montevideo, Uruguay (UTC-3) · Open to remote
++1 555 0100 2030 · alex.rivera@example.com · github.com/example-alex
+
+SUMMARY
+
+Backend engineer with 10+ years building Java services, from design through production support. Core stack: Java 17
+and 21 with Spring Boot, PostgreSQL and Kafka, deployed with Docker and Kubernetes on AWS. Tech lead for a team of six:
+hiring, one-on-ones, mentoring and code review, with ownership of delivery towards product stakeholders. Comfortable
+with payments and fintech domains, observability and incident response. English (C1), Spanish (native).
+
+PROFESSIONAL EXPERIENCE
+
+Tech Lead, Northwind Labs | 2022 – Present
+    Lead a team of six engineers building Spring Boot microservices (Java 21) for a B2B logistics platform.
+    Run hiring loops, one-on-ones and sprint planning; mentoring two engineers into senior roles.
+    Designed an event-driven architecture on Kafka that replaced nightly batch jobs with near-real-time updates.
+    Own observability: Prometheus metrics, Grafana dashboards and alerting, plus incident response and postmortems.
+    Code review on every pull request; introduced Testcontainers integration tests and raised coverage to 80%.
+    Deploy with Docker and Kubernetes (EKS) on AWS through GitHub Actions CI/CD pipelines, infrastructure in Terraform.
+
+Technologies: Java 21, Spring Boot 3, Kafka, PostgreSQL, Docker, Kubernetes, AWS, Terraform, GitHub Actions, JUnit, Mockito
+
+Senior Software Engineer, Bluefin Systems | 2019 – 2022
+    Built REST APIs in Java 17 and Spring Boot for a payments gateway processing card transactions for fintech clients.
+    Modelled ledgers in PostgreSQL with JPA/Hibernate and tuned slow queries for large datasets.
+    Integrated PSP providers over REST and webhooks, with idempotency keys and retries.
+    Practised TDD with JUnit 5 and Mockito; maintained Maven builds and Jenkins pipelines.
+
+Technologies: Java 17, Spring Boot 2, Hibernate, PostgreSQL, Redis, Maven, Jenkins, JUnit, Mockito
+
+Software Developer, Cobalt Retail | 2016 – 2019
+    Developed features for an e-commerce monolith in Java 8 and Spring, and split the catalogue into microservices.
+    Wrote SQL reports on MySQL and automated regression tests with Selenium.
+
+Technologies: Java 8, Spring 4, MySQL, Selenium, Gradle, Linux
+
+QA Automation Engineer, Tandem Travel | 2014 – 2016
+    Built automated functional test suites in Java with Selenium and Cucumber.
+
+SKILLS
+
+Languages: Java, SQL, Python (scripting), TypeScript (basic)
+Frameworks: Spring Boot, Spring Data, Hibernate/JPA, React (basic)
+Data and messaging: PostgreSQL, MySQL, Redis, Kafka
+Cloud and delivery: AWS, Docker, Kubernetes, Terraform, CI/CD, GitHub Actions, Jenkins, Maven, Gradle
+Testing: JUnit, Mockito, Testcontainers, Selenium, Cucumber
+Practices: microservices, REST, event-driven design, code review, agile, scrum
+
+EDUCATION
+
+B.Sc. in Computer Engineering, Universidad de la República | 2009 – 2014
+
+LANGUAGES
+
+English (C1), Spanish (native)

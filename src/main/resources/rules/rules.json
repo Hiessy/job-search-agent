@@ -1,0 +1,234 @@
+{
+  "gates": {
+    "require_contact": [
+      "name",
+      "email",
+      "phone"
+    ],
+    "require_sections": [
+      "summary",
+      "experience",
+      "skills",
+      "education"
+    ],
+    "max_garbled_chars": 0,
+    "forbid_placeholders": true,
+    "require_years_statement": true
+  },
+  "match": {
+    "required_coverage_min": 80,
+    "required_coverage_strong": 90,
+    "evidence_min": 60,
+    "evidence_strong": 75,
+    "recent_jobs": 2,
+    "recency_min": 50,
+    "title_alignment_min": 50,
+    "nice_coverage_bonus": 40
+  },
+  "english_levels": [
+    "c1",
+    "c2",
+    "b2",
+    "fluent",
+    "advanced",
+    "proficient",
+    "native",
+    "bilingual"
+  ],
+  "synonyms": {
+    "rest": [
+      "rest",
+      "restful",
+      "rest api",
+      "rest apis"
+    ],
+    "ci/cd": [
+      "ci/cd",
+      "continuous integration",
+      "github actions",
+      "jenkins"
+    ],
+    "code review": [
+      "code review",
+      "code reviews",
+      "review pull requests",
+      "reviews pull requests",
+      "reviewed pull requests",
+      "pull request review",
+      "review prs",
+      "reviewed prs"
+    ],
+    "microservices": [
+      "microservice",
+      "microservices"
+    ],
+    "llm": [
+      "llm",
+      "large language model"
+    ],
+    "vector database": [
+      "vector database",
+      "vector db",
+      "pgvector",
+      "pinecone",
+      "weaviate",
+      "qdrant",
+      "chroma"
+    ],
+    "pub/sub": [
+      "pub/sub",
+      "pubsub"
+    ],
+    "airflow": [
+      "airflow",
+      "cloud composer"
+    ],
+    "apache beam": [
+      "apache beam",
+      "beam",
+      "dataflow"
+    ],
+    "kubernetes": [
+      "kubernetes",
+      "k8s",
+      "gke",
+      "eks",
+      "aks"
+    ],
+    "aws": [
+      "aws",
+      "amazon web services"
+    ],
+    "gcp": [
+      "gcp",
+      "google cloud"
+    ],
+    "scrum": [
+      "scrum",
+      "agile"
+    ],
+    "hibernate/jpa": [
+      "hibernate",
+      "jpa"
+    ],
+    "mentoring": [
+      "mentor",
+      "mentored",
+      "mentoring",
+      "mentors",
+      "coached",
+      "coaching",
+      "mentorship"
+    ],
+    "technical leadership": [
+      "technical lead",
+      "tech lead",
+      "technical leadership",
+      "led a team",
+      "led the development team",
+      "team lead"
+    ],
+    "data modeling": [
+      "data modeling",
+      "data modelling",
+      "data model"
+    ],
+    "llm evaluation": [
+      "llm evaluation",
+      "evaluation of llm",
+      "evals"
+    ],
+    "embeddings": [
+      "embedding",
+      "embeddings"
+    ],
+    "java 17": [
+      "java 17",
+      "java 8-25",
+      "java 21",
+      "java 25"
+    ],
+    "jpa": [
+      "jpa",
+      "hibernate"
+    ],
+    "event-driven": [
+      "event-driven",
+      "event driven"
+    ],
+    "ai agents": [
+      "ai agent",
+      "ai agents",
+      "agentic"
+    ],
+    "system integration": [
+      "integration"
+    ],
+    "unit testing": [
+      "unit test",
+      "unit tests",
+      "junit",
+      "tdd"
+    ],
+    "testing": [
+      "testing",
+      "tdd",
+      "junit",
+      "test"
+    ],
+    "security": [
+      "security",
+      "vulnerabilities",
+      "oauth"
+    ],
+    "data warehouse": [
+      "data warehouse",
+      "data lake",
+      "bigquery"
+    ],
+    "etl": [
+      "etl",
+      "data pipeline",
+      "data pipelines"
+    ],
+    "distributed systems": [
+      "distributed systems",
+      "distributed services",
+      "microservice"
+    ]
+  },
+  "score_weights": {
+    "coverage": 45,
+    "evidence": 15,
+    "recency": 10,
+    "title": 10,
+    "nice": 10,
+    "years": 10,
+    "knockout_penalty": 12,
+    "gate_penalty": 5,
+    "lead_penalty": 10,
+    "quality_penalty": 4
+  },
+  "rating_labels": [
+    [
+      80,
+      "High"
+    ],
+    [
+      65,
+      "Medium"
+    ],
+    [
+      50,
+      "Low"
+    ],
+    [
+      0,
+      "Very low"
+    ]
+  ],
+  "llm_weight": 0.5,
+  "quality": {
+    "impact_bullets_min": 30
+  }
+}

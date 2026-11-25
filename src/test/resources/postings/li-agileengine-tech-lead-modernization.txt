@@ -1,0 +1,8 @@
+Title: Tech Lead Software Engineer
+Min years: 0
+Min lead years: 0
+Knockout: legacy modernization, ai-assisted development, English
+Required: technical leadership, React, REST, software architecture, legacy modernization, migration, data modeling, security, oauth, testing, CI/CD, git, ai-assisted development, code review, stakeholder management
+Nice to have: payments, RAG, observability, Terraform, fintech
+Constraints: available to start full-time in early December 2026, based in Argentina
+Source: https://www.linkedin.com/jobs/view/4491191345/ (AgileEngine, remote Argentina, start early Dec 2026, LinkedIn, read 2026-11-24)

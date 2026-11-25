@@ -1,0 +1,9 @@
+Title: Senior Java Backend Engineer
+Min years: 5
+Knockout: Java, Spring Boot, English
+Required: Java, Spring Boot, REST, system integration, Scrum, unit testing, code review
+Nice to have: React, TypeScript
+Source: https://freehire.me/jobs/senior-java-backend-engineer-spring-boot-remote-talan-wuxshfwd (Talan, remote Argentina, open, updated 2026-11-21)
+
+Build Java/Spring Boot backend and web UI components, develop REST APIs and integration services,
+write unit tests, take part in code reviews, sprints and Agile ceremonies. English B2/C1.

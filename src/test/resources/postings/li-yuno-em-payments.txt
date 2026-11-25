@@ -1,0 +1,7 @@
+Title: Engineering Manager - Core Payments
+Min years: 5
+Min lead years: 1
+Knockout: Java, payments, English
+Required: hiring, mentoring, payments, Java, microservices, event-driven, REST, SQL, security, ai-assisted development, claude code, agile, stakeholder management, code review, software architecture
+Nice to have: Go, Kotlin
+Source: https://www.linkedin.com/jobs/view/4492075151/ (Yuno, remote LATAM, LinkedIn, read 2026-11-24)

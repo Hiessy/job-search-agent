@@ -1,0 +1,560 @@
+{
+ "java": [
+  "java"
+ ],
+ "java 17": [
+  "java 17",
+  "java 21",
+  "java 25",
+  "java 8-25"
+ ],
+ "spring boot": [
+  "spring boot"
+ ],
+ "hibernate": [
+  "hibernate"
+ ],
+ "jpa": [
+  "jpa"
+ ],
+ "jooq": [
+  "jooq"
+ ],
+ "mybatis": [
+  "mybatis"
+ ],
+ "maven": [
+  "maven"
+ ],
+ "gradle": [
+  "gradle"
+ ],
+ "kotlin": [
+  "kotlin"
+ ],
+ "scala": [
+  "scala"
+ ],
+ "quarkus": [
+  "quarkus"
+ ],
+ "micronaut": [
+  "micronaut"
+ ],
+ "python": [
+  "python"
+ ],
+ "django": [
+  "django"
+ ],
+ "flask": [
+  "flask"
+ ],
+ "fastapi": [
+  "fastapi"
+ ],
+ "pandas": [
+  "pandas"
+ ],
+ "pyspark": [
+  "pyspark"
+ ],
+ "spark": [
+  "spark"
+ ],
+ "numpy": [
+  "numpy"
+ ],
+ "javascript": [
+  "javascript"
+ ],
+ "typescript": [
+  "typescript"
+ ],
+ "node.js": [
+  "node.js",
+  "nodejs",
+  "node"
+ ],
+ "react": [
+  "react"
+ ],
+ "angular": [
+  "angular"
+ ],
+ "vue": [
+  "vue"
+ ],
+ "next.js": [
+  "next.js",
+  "nextjs"
+ ],
+ "html": [
+  "html"
+ ],
+ "css": [
+  "css"
+ ],
+ "go": [
+  "golang"
+ ],
+ "rust": [
+  "rust"
+ ],
+ "c#": [
+  "c#",
+  ".net"
+ ],
+ "ruby": [
+  "ruby"
+ ],
+ "rails": [
+  "ruby on rails",
+  "rails"
+ ],
+ "php": [
+  "php"
+ ],
+ "sql": [
+  "sql"
+ ],
+ "postgresql": [
+  "postgresql",
+  "postgres"
+ ],
+ "mysql": [
+  "mysql"
+ ],
+ "oracle": [
+  "oracle"
+ ],
+ "sql server": [
+  "sql server",
+  "mssql"
+ ],
+ "mongodb": [
+  "mongodb"
+ ],
+ "cassandra": [
+  "cassandra"
+ ],
+ "redis": [
+  "redis"
+ ],
+ "dynamodb": [
+  "dynamodb"
+ ],
+ "elasticsearch": [
+  "elasticsearch"
+ ],
+ "bigquery": [
+  "bigquery"
+ ],
+ "snowflake": [
+  "snowflake"
+ ],
+ "dbt": [
+  "dbt"
+ ],
+ "airflow": [
+  "airflow",
+  "cloud composer"
+ ],
+ "dataflow": [
+  "dataflow"
+ ],
+ "apache beam": [
+  "apache beam"
+ ],
+ "dataproc": [
+  "dataproc"
+ ],
+ "pub/sub": [
+  "pub/sub",
+  "pubsub"
+ ],
+ "kafka": [
+  "kafka"
+ ],
+ "rabbitmq": [
+  "rabbitmq"
+ ],
+ "sqs": [
+  "sqs"
+ ],
+ "graphql": [
+  "graphql"
+ ],
+ "grpc": [
+  "grpc"
+ ],
+ "rest": [
+  "rest"
+ ],
+ "microservices": [
+  "microservices"
+ ],
+ "event-driven": [
+  "event-driven",
+  "event driven"
+ ],
+ "distributed systems": [
+  "distributed systems"
+ ],
+ "docker": [
+  "docker"
+ ],
+ "kubernetes": [
+  "kubernetes"
+ ],
+ "terraform": [
+  "terraform"
+ ],
+ "helm": [
+  "helm"
+ ],
+ "aws": [
+  "aws"
+ ],
+ "gcp": [
+  "gcp"
+ ],
+ "azure": [
+  "azure"
+ ],
+ "lambda": [
+  "lambda"
+ ],
+ "ci/cd": [
+  "ci/cd"
+ ],
+ "github actions": [
+  "github actions"
+ ],
+ "jenkins": [
+  "jenkins"
+ ],
+ "gitlab": [
+  "gitlab"
+ ],
+ "git": [
+  "git"
+ ],
+ "linux": [
+  "linux"
+ ],
+ "bash": [
+  "bash"
+ ],
+ "junit": [
+  "junit"
+ ],
+ "mockito": [
+  "mockito"
+ ],
+ "testcontainers": [
+  "testcontainers"
+ ],
+ "testng": [
+  "testng"
+ ],
+ "selenium": [
+  "selenium"
+ ],
+ "cucumber": [
+  "cucumber"
+ ],
+ "cypress": [
+  "cypress"
+ ],
+ "jest": [
+  "jest"
+ ],
+ "tdd": [
+  "tdd"
+ ],
+ "unit testing": [
+  "unit testing"
+ ],
+ "integration testing": [
+  "integration testing"
+ ],
+ "code review": [
+  "code review"
+ ],
+ "observability": [
+  "observability"
+ ],
+ "datadog": [
+  "datadog"
+ ],
+ "prometheus": [
+  "prometheus"
+ ],
+ "grafana": [
+  "grafana"
+ ],
+ "opentelemetry": [
+  "opentelemetry"
+ ],
+ "sonarqube": [
+  "sonarqube"
+ ],
+ "oauth": [
+  "oauth",
+  "oauth 2.0"
+ ],
+ "jwt": [
+  "jwt"
+ ],
+ "security": [
+  "security"
+ ],
+ "llm": [
+  "llm"
+ ],
+ "openai": [
+  "openai"
+ ],
+ "anthropic": [
+  "anthropic"
+ ],
+ "rag": [
+  "rag"
+ ],
+ "langchain": [
+  "langchain"
+ ],
+ "langgraph": [
+  "langgraph"
+ ],
+ "llamaindex": [
+  "llamaindex"
+ ],
+ "prompt engineering": [
+  "prompt engineering"
+ ],
+ "vector database": [
+  "vector database"
+ ],
+ "embeddings": [
+  "embeddings"
+ ],
+ "ai agents": [
+  "ai agent",
+  "ai agents",
+  "agentic",
+  "coding agents"
+ ],
+ "mcp": [
+  "mcp"
+ ],
+ "hugging face": [
+  "hugging face",
+  "huggingface"
+ ],
+ "machine learning": [
+  "machine learning"
+ ],
+ "data modeling": [
+  "data modeling"
+ ],
+ "etl": [
+  "etl"
+ ],
+ "data warehouse": [
+  "data warehouse"
+ ],
+ "scrum": [
+  "scrum"
+ ],
+ "agile": [
+  "agile",
+  "scrum"
+ ],
+ "kanban": [
+  "kanban"
+ ],
+ "jira": [
+  "jira"
+ ],
+ "mentoring": [
+  "mentoring"
+ ],
+ "technical leadership": [
+  "technical leadership"
+ ],
+ "system design": [
+  "system design"
+ ],
+ "performance tuning": [
+  "performance tuning"
+ ],
+ "ollama": [
+  "ollama"
+ ],
+ "llm evaluation": [
+  "llm evaluation",
+  "evaluation of llm",
+  "evaluate and compare llm"
+ ],
+ "structured outputs": [
+  "structured output",
+  "structured outputs",
+  "structured json"
+ ],
+ "whisper": [
+  "whisper"
+ ],
+ "ai-assisted development": [
+  "ai-assisted",
+  "ai coding",
+  "ai tools",
+  "ai coding agents",
+  "coding agents",
+  "claude code",
+  "copilot",
+  "cursor"
+ ],
+ "claude code": [
+  "claude code"
+ ],
+ "github copilot": [
+  "copilot"
+ ],
+ "incident response": [
+  "incident response",
+  "incident management",
+  "incidents",
+  "postmortem",
+  "postmortems",
+  "post-mortem",
+  "post-mortems",
+  "on-call"
+ ],
+ "monitoring": [
+  "monitoring",
+  "monitored",
+  "alerting"
+ ],
+ "tracing": [
+  "tracing",
+  "distributed tracing"
+ ],
+ "slo": [
+  "slo",
+  "slos",
+  "sla",
+  "slas"
+ ],
+ "legacy modernization": [
+  "legacy modernization",
+  "legacy system",
+  "legacy systems",
+  "legacy application",
+  "legacy applications",
+  "modernization",
+  "modernizing",
+  "modernized",
+  "modernize"
+ ],
+ "migration": [
+  "migration",
+  "migrations",
+  "migrated"
+ ],
+ "stakeholder management": [
+  "stakeholder",
+  "stakeholders"
+ ],
+ "client-facing": [
+  "client-facing",
+  "client stakeholders",
+  "client communication",
+  "clients"
+ ],
+ "hiring": [
+  "hiring",
+  "interviewing",
+  "selected team members",
+  "recruiting"
+ ],
+ "one-on-ones": [
+  "1:1",
+  "1:1s",
+  "one-on-one",
+  "one-on-ones"
+ ],
+ "sprint planning": [
+  "sprint planning",
+  "backlog refinement",
+  "retrospectives"
+ ],
+ "software architecture": [
+  "software architecture",
+  "architecture",
+  "architectural",
+  "system design"
+ ],
+ "spring data": [
+  "spring data"
+ ],
+ "spring security": [
+  "spring security"
+ ],
+ "function calling": [
+  "function calling",
+  "tool calling",
+  "tool use"
+ ],
+ "guardrails": [
+  "guardrails"
+ ],
+ "hallucination": [
+  "hallucination",
+  "hallucinations"
+ ],
+ "llm-as-judge": [
+  "llm-as-judge",
+  "llm as judge",
+  "llm-as-a-judge"
+ ],
+ "payments": [
+  "payments",
+  "payment gateway",
+  "psp"
+ ],
+ "fintech": [
+  "fintech",
+  "financial services"
+ ],
+ "azure openai": [
+  "azure openai"
+ ],
+ "semantic kernel": [
+  "semantic kernel"
+ ],
+ "pulumi": [
+  "pulumi"
+ ],
+ "concurrency": [
+  "concurrency",
+  "multithreading"
+ ],
+ "jvm tuning": [
+  "jvm tuning",
+  "garbage collection",
+  "jvm performance",
+  "profiling"
+ ],
+ "delivery ownership": [
+  "own delivery",
+  "owned delivery",
+  "delivery end to end",
+  "end-to-end delivery",
+  "ownership"
+ ],
+ "spring batch": [
+  "spring batch"
+ ]
+}

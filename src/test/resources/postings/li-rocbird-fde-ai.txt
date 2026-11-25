@@ -1,0 +1,8 @@
+Title: Senior Forward Deployed AI Engineer
+Min years: 5
+Min lead years: 0
+Knockout: ai agents, English
+Required: Java, Python, REST, ai agents, LLM, function calling, MCP, OpenAI, Anthropic, oauth, JWT, AWS, Docker, CI/CD, client-facing
+Nice to have: payments, fintech, security
+Constraints: 4+ hours overlap with US Pacific time, start within 2 to 4 weeks
+Source: https://www.linkedin.com/jobs/view/4493030150/ (Rocbird, remote LATAM, LinkedIn, read 2026-11-24)

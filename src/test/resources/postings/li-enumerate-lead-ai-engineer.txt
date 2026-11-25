@@ -1,0 +1,8 @@
+Title: Lead Full Stack AI Engineer (Tech Lead)
+Min years: 7
+Min lead years: 0
+Knockout: LLM, RAG, English
+Required: LLM, RAG, embeddings, vector database, function calling, prompt engineering, React, Python, Java, data modeling, data warehouse, etl, REST, testing, observability, code review, mentoring, software architecture, technical leadership
+Nice to have: ai agents, LangChain, LlamaIndex, LangGraph, llm evaluation, AWS, guardrails
+Constraints: contractor, LATAM
+Source: https://www.linkedin.com/jobs/view/4488958128/ (Enumerate, remote LATAM contract, LinkedIn, read 2026-11-24)

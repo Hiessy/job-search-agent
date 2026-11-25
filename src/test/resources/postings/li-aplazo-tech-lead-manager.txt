@@ -1,0 +1,7 @@
+Title: Technical Lead Manager
+Min years: 4
+Min lead years: 1
+Knockout: Java, Spring Boot, English
+Required: Java, Spring Boot, React, PostgreSQL, AWS, CI/CD, observability, code review, mentoring, one-on-ones, hiring, sprint planning, incident response, ai-assisted development, stakeholder management, software architecture, testing
+Nice to have: fintech, payments, Python, Go, Angular, MongoDB, Datadog, Pulumi, Jenkins, Lambda
+Source: https://www.linkedin.com/jobs/view/4491595935/ (Aplazo, remote Argentina, LinkedIn, read 2026-11-24)

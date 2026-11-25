@@ -1,0 +1,7 @@
+Title: AI Technical Lead
+Min years: 8
+Min lead years: 0
+Knockout: LLM, RAG, Azure, English
+Required: LLM, RAG, ai agents, MCP, prompt engineering, structured outputs, function calling, Azure, Azure OpenAI, Python, microservices, event-driven, CI/CD, ai-assisted development, llm evaluation, guardrails, observability, mentoring, code review, client-facing, technical leadership
+Nice to have: LangChain, LangGraph, Semantic Kernel, LlamaIndex, vector database
+Source: https://www.linkedin.com/jobs/view/4468063088/ (Bridgenext, remote LATAM, LinkedIn, read 2026-11-24)

@@ -1,0 +1,17 @@
+Lead AI Engineer
+Synthetic posting written for tests (free text, mixed English and Spanish headings).
+
+Sobre el rol
+Vas a liderar un equipo que construye agentes con LLM para clientes de banca.
+
+Requisitos excluyentes
+Más de 6 años de experiencia en desarrollo de software, Python y Java.
+3+ years leading teams of engineers.
+Experience building AI agents with tool calling, RAG and a vector database.
+LangChain or LangGraph, OpenAI and Anthropic APIs.
+Inglés avanzado.
+
+Deseable
+MCP servers, guardrails and LLM evaluation, Kubernetes.
+
+Source: https://jobs.example.com/banca-ai/lead-ai-engineer (Banca AI, synthetic, remote Argentina)

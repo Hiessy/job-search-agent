@@ -1,0 +1,7378 @@
+[
+ {
+  "cv": "sample",
+  "posting": "agileengine-ai-agent.txt",
+  "label": "Low",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "Senior AI Agent Engineer",
+   "min_years": 5,
+   "min_lead_years": 0,
+   "knockout": [
+    "Java",
+    "Spring Boot",
+    "LLM",
+    "English"
+   ],
+   "required": [
+    "Java",
+    "Spring Boot",
+    "LLM",
+    "AI agents",
+    "TypeScript",
+    "Python",
+    "REST",
+    "AWS",
+    "event-driven",
+    "distributed systems",
+    "testing",
+    "observability",
+    "security"
+   ],
+   "nice": [
+    "code review",
+    "workflow engine",
+    "technical leadership"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": false,
+    "detail": "missing: LLM"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing 5"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 69,
+    "detail": "69% (9/13)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 78,
+    "detail": "78%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 67,
+    "detail": "67%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 50,
+    "detail": "50%, headline lacks: ai, agent"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": true,
+    "value": 67,
+    "detail": "67%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [],
+  "verdict": "REJECT",
+  "score": 55,
+  "keywords": {
+   "missing_required": [
+    "LLM",
+    "AI agents",
+    "distributed systems",
+    "security"
+   ],
+   "missing_nice": [
+    "workflow engine"
+   ],
+   "skills_list_only": [
+    "TypeScript",
+    "Python"
+   ],
+   "headline_words": [
+    "ai",
+    "agent"
+   ]
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "dillo-data-gcp.txt",
+  "label": "Very low",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "Senior Data Engineer",
+   "min_years": 6,
+   "min_lead_years": 0,
+   "knockout": [
+    "Python",
+    "SQL",
+    "BigQuery"
+   ],
+   "required": [
+    "GCP",
+    "Dataproc",
+    "Dataflow",
+    "BigQuery",
+    "SQL",
+    "dbt",
+    "Python",
+    "Airflow",
+    "ETL",
+    "Git",
+    "data warehouse",
+    "data modeling"
+   ],
+   "nice": [
+    "Talend",
+    "Fivetran"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": false,
+    "detail": "missing: BigQuery"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing 6"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 17,
+    "detail": "17% (2/12)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": false,
+    "value": 50,
+    "detail": "50%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 67,
+    "detail": "67%, headline lacks: data"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [],
+  "verdict": "REJECT",
+  "score": 16,
+  "keywords": {
+   "missing_required": [
+    "GCP",
+    "Dataproc",
+    "Dataflow",
+    "BigQuery",
+    "dbt",
+    "Airflow",
+    "ETL",
+    "Git",
+    "data warehouse",
+    "data modeling"
+   ],
+   "missing_nice": [
+    "Talend",
+    "Fivetran"
+   ],
+   "skills_list_only": [
+    "Python"
+   ],
+   "headline_words": [
+    "data"
+   ]
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "inject-ignore-instructions.txt",
+  "label": "High",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "Senior Java Developer",
+   "min_years": 5,
+   "min_lead_years": 0,
+   "knockout": [
+    "java",
+    "English"
+   ],
+   "required": [
+    "java",
+    "java 17",
+    "spring boot",
+    "postgresql",
+    "kafka",
+    "rest",
+    "microservices",
+    "docker",
+    "aws"
+   ],
+   "nice": []
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing 5"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": true,
+    "value": 100,
+    "detail": "100% (9/9)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [],
+  "verdict": "STRONG",
+  "score": 96,
+  "keywords": {
+   "missing_required": [],
+   "missing_nice": [],
+   "skills_list_only": [],
+   "headline_words": []
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "inject-role-tokens.txt",
+  "label": "High",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "Backend Tech Lead",
+   "min_years": 6,
+   "min_lead_years": 2,
+   "knockout": [
+    "Java",
+    "Spring Boot"
+   ],
+   "required": [
+    "Java",
+    "Spring Boot",
+    "microservices",
+    "PostgreSQL",
+    "Kafka",
+    "AWS",
+    "Docker",
+    "code review",
+    "mentoring"
+   ],
+   "nice": [
+    "Kubernetes",
+    "Terraform"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing 6"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": true,
+    "value": 100,
+    "detail": "100% (9/9)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing 2"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [],
+  "verdict": "STRONG",
+  "score": 96,
+  "keywords": {
+   "missing_required": [],
+   "missing_nice": [],
+   "skills_list_only": [],
+   "headline_words": []
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "li-agileengine-tech-lead-modernization.txt",
+  "label": "Very low",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "Tech Lead Software Engineer",
+   "min_years": 0,
+   "min_lead_years": 0,
+   "knockout": [
+    "legacy modernization",
+    "ai-assisted development",
+    "English"
+   ],
+   "required": [
+    "technical leadership",
+    "React",
+    "REST",
+    "software architecture",
+    "legacy modernization",
+    "migration",
+    "data modeling",
+    "security",
+    "oauth",
+    "testing",
+    "CI/CD",
+    "git",
+    "ai-assisted development",
+    "code review",
+    "stakeholder management"
+   ],
+   "nice": [
+    "payments",
+    "RAG",
+    "observability",
+    "Terraform",
+    "fintech"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": false,
+    "detail": "missing: legacy modernization, ai-assisted development"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing not stated"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 53,
+    "detail": "53% (8/15)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 75,
+    "detail": "75%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 75,
+    "detail": "75%, headline lacks: software"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": true,
+    "value": 80,
+    "detail": "80%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [
+   "start date"
+  ],
+  "verdict": "REJECT",
+  "score": 33,
+  "keywords": {
+   "missing_required": [
+    "legacy modernization",
+    "migration",
+    "data modeling",
+    "security",
+    "oauth",
+    "git",
+    "ai-assisted development"
+   ],
+   "missing_nice": [
+    "RAG"
+   ],
+   "skills_list_only": [
+    "React",
+    "stakeholder management"
+   ],
+   "headline_words": [
+    "software"
+   ]
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "li-aplazo-tech-lead-manager.txt",
+  "label": "High",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "Technical Lead Manager",
+   "min_years": 4,
+   "min_lead_years": 1,
+   "knockout": [
+    "Java",
+    "Spring Boot",
+    "English"
+   ],
+   "required": [
+    "Java",
+    "Spring Boot",
+    "React",
+    "PostgreSQL",
+    "AWS",
+    "CI/CD",
+    "observability",
+    "code review",
+    "mentoring",
+    "one-on-ones",
+    "hiring",
+    "sprint planning",
+    "incident response",
+    "ai-assisted development",
+    "stakeholder management",
+    "software architecture",
+    "testing"
+   ],
+   "nice": [
+    "fintech",
+    "payments",
+    "Python",
+    "Go",
+    "Angular",
+    "MongoDB",
+    "Datadog",
+    "Pulumi",
+    "Jenkins",
+    "Lambda"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing 4"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": true,
+    "value": 94,
+    "detail": "94% (16/17)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 88,
+    "detail": "88%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 67,
+    "detail": "67%, headline lacks: manager"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": true,
+    "value": 40,
+    "detail": "40%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing 1"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [],
+  "verdict": "STRONG",
+  "score": 82,
+  "keywords": {
+   "missing_required": [
+    "ai-assisted development"
+   ],
+   "missing_nice": [
+    "Go",
+    "Angular",
+    "MongoDB",
+    "Datadog",
+    "Pulumi",
+    "Lambda"
+   ],
+   "skills_list_only": [
+    "React",
+    "stakeholder management"
+   ],
+   "headline_words": [
+    "manager"
+   ]
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "li-bairesdev-java-react-tl.txt",
+  "label": "Medium",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "FullStack Java + React Technical Leader",
+   "min_years": 5,
+   "min_lead_years": 0,
+   "knockout": [
+    "Java",
+    "React",
+    "English"
+   ],
+   "required": [
+    "Java",
+    "React",
+    "software architecture",
+    "distributed systems",
+    "monitoring",
+    "CI/CD",
+    "code review",
+    "mentoring",
+    "agile",
+    "stakeholder management",
+    "client-facing",
+    "technical leadership"
+   ],
+   "nice": [
+    "AWS",
+    "Docker"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing 5"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": true,
+    "value": 92,
+    "detail": "92% (11/12)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 73,
+    "detail": "73%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 50,
+    "detail": "50%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 60,
+    "detail": "60%, headline lacks: fullstack, react"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [],
+  "verdict": "ACCEPTABLE",
+  "score": 79,
+  "keywords": {
+   "missing_required": [
+    "distributed systems"
+   ],
+   "missing_nice": [],
+   "skills_list_only": [
+    "React",
+    "agile",
+    "stakeholder management"
+   ],
+   "headline_words": [
+    "fullstack",
+    "react"
+   ]
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "li-bridgenext-ai-tech-lead.txt",
+  "label": "Very low",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "AI Technical Lead",
+   "min_years": 8,
+   "min_lead_years": 0,
+   "knockout": [
+    "LLM",
+    "RAG",
+    "Azure",
+    "English"
+   ],
+   "required": [
+    "LLM",
+    "RAG",
+    "ai agents",
+    "MCP",
+    "prompt engineering",
+    "structured outputs",
+    "function calling",
+    "Azure",
+    "Azure OpenAI",
+    "Python",
+    "microservices",
+    "event-driven",
+    "CI/CD",
+    "ai-assisted development",
+    "llm evaluation",
+    "guardrails",
+    "observability",
+    "mentoring",
+    "code review",
+    "client-facing",
+    "technical leadership"
+   ],
+   "nice": [
+    "LangChain",
+    "LangGraph",
+    "Semantic Kernel",
+    "LlamaIndex",
+    "vector database"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": false,
+    "detail": "missing: LLM, RAG, Azure"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing 8"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 43,
+    "detail": "43% (9/21)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 89,
+    "detail": "89%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 67,
+    "detail": "67%, headline lacks: ai"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [],
+  "verdict": "REJECT",
+  "score": 9,
+  "keywords": {
+   "missing_required": [
+    "LLM",
+    "RAG",
+    "ai agents",
+    "MCP",
+    "prompt engineering",
+    "structured outputs",
+    "function calling",
+    "Azure",
+    "Azure OpenAI",
+    "ai-assisted development",
+    "llm evaluation",
+    "guardrails"
+   ],
+   "missing_nice": [
+    "LangChain",
+    "LangGraph",
+    "Semantic Kernel",
+    "LlamaIndex",
+    "vector database"
+   ],
+   "skills_list_only": [
+    "Python"
+   ],
+   "headline_words": [
+    "ai"
+   ]
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "li-enumerate-lead-ai-engineer.txt",
+  "label": "Very low",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "Lead Full Stack AI Engineer (Tech Lead)",
+   "min_years": 7,
+   "min_lead_years": 0,
+   "knockout": [
+    "LLM",
+    "RAG",
+    "English"
+   ],
+   "required": [
+    "LLM",
+    "RAG",
+    "embeddings",
+    "vector database",
+    "function calling",
+    "prompt engineering",
+    "React",
+    "Python",
+    "Java",
+    "data modeling",
+    "data warehouse",
+    "etl",
+    "REST",
+    "testing",
+    "observability",
+    "code review",
+    "mentoring",
+    "software architecture",
+    "technical leadership"
+   ],
+   "nice": [
+    "ai agents",
+    "LangChain",
+    "LlamaIndex",
+    "LangGraph",
+    "llm evaluation",
+    "AWS",
+    "guardrails"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": false,
+    "detail": "missing: LLM, RAG"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing 7"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 53,
+    "detail": "53% (10/19)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 80,
+    "detail": "80%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 50,
+    "detail": "50%, headline lacks: full, stack, ai"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 14,
+    "detail": "14%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [
+   "contract type"
+  ],
+  "verdict": "REJECT",
+  "score": 24,
+  "keywords": {
+   "missing_required": [
+    "LLM",
+    "RAG",
+    "embeddings",
+    "vector database",
+    "function calling",
+    "prompt engineering",
+    "data modeling",
+    "data warehouse",
+    "etl"
+   ],
+   "missing_nice": [
+    "ai agents",
+    "LangChain",
+    "LlamaIndex",
+    "LangGraph",
+    "llm evaluation",
+    "guardrails"
+   ],
+   "skills_list_only": [
+    "React",
+    "Python"
+   ],
+   "headline_words": [
+    "full",
+    "stack",
+    "ai"
+   ]
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "li-fever-tech-lead.txt",
+  "label": "Medium",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "Tech Lead",
+   "min_years": 0,
+   "min_lead_years": 0,
+   "knockout": [
+    "Python",
+    "English"
+   ],
+   "required": [
+    "Python",
+    "microservices",
+    "distributed systems",
+    "event-driven",
+    "Kafka",
+    "RabbitMQ",
+    "concurrency",
+    "SQL",
+    "REST",
+    "performance tuning",
+    "software architecture",
+    "mentoring",
+    "code review",
+    "testing",
+    "technical leadership",
+    "stakeholder management"
+   ],
+   "nice": [
+    "Django",
+    "Flask",
+    "PostgreSQL",
+    "Redis",
+    "AWS",
+    "Docker",
+    "Kubernetes",
+    "CI/CD",
+    "agile"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing not stated"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 75,
+    "detail": "75% (12/16)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 83,
+    "detail": "83%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": true,
+    "value": 78,
+    "detail": "78%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [
+   "contract type"
+  ],
+  "verdict": "WEAK",
+  "score": 70,
+  "keywords": {
+   "missing_required": [
+    "distributed systems",
+    "RabbitMQ",
+    "concurrency",
+    "performance tuning"
+   ],
+   "missing_nice": [
+    "Django",
+    "Flask"
+   ],
+   "skills_list_only": [
+    "Python",
+    "stakeholder management"
+   ],
+   "headline_words": []
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "li-lumenalta-se-lead.txt",
+  "label": "Medium",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "Software Engineer Lead",
+   "min_years": 8,
+   "min_lead_years": 2,
+   "knockout": [
+    "Java",
+    "Spring Boot",
+    "Kafka",
+    "English"
+   ],
+   "required": [
+    "Java",
+    "Spring Boot",
+    "spring data",
+    "spring security",
+    "Kafka",
+    "event-driven",
+    "distributed systems",
+    "PostgreSQL",
+    "React",
+    "TypeScript",
+    "AWS",
+    "observability",
+    "tracing",
+    "incident response",
+    "jvm tuning",
+    "concurrency",
+    "code review",
+    "mentoring",
+    "client-facing",
+    "software architecture"
+   ],
+   "nice": [
+    "legacy modernization",
+    "CI/CD",
+    "Docker",
+    "Kubernetes",
+    "Terraform",
+    "Datadog",
+    "Prometheus",
+    "Grafana",
+    "OpenTelemetry",
+    "JUnit",
+    "Jest",
+    "Cypress"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing 8"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 75,
+    "detail": "75% (15/20)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 80,
+    "detail": "80%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 67,
+    "detail": "67%, headline lacks: software"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": true,
+    "value": 58,
+    "detail": "58%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing 2"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [
+   "time zone overlap",
+   "application deadline"
+  ],
+  "verdict": "WEAK",
+  "score": 74,
+  "keywords": {
+   "missing_required": [
+    "spring security",
+    "distributed systems",
+    "tracing",
+    "jvm tuning",
+    "concurrency"
+   ],
+   "missing_nice": [
+    "legacy modernization",
+    "Datadog",
+    "OpenTelemetry",
+    "Jest",
+    "Cypress"
+   ],
+   "skills_list_only": [
+    "spring data",
+    "React",
+    "TypeScript"
+   ],
+   "headline_words": [
+    "software"
+   ]
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "li-ollyolly-staff.txt",
+  "label": "Very low",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "Staff Software Engineer",
+   "min_years": 7,
+   "min_lead_years": 0,
+   "knockout": [
+    "TypeScript",
+    "LLM",
+    "English"
+   ],
+   "required": [
+    "TypeScript",
+    "SQL",
+    "PostgreSQL",
+    "LLM",
+    "hallucination",
+    "llm evaluation",
+    "ai-assisted development",
+    "claude code",
+    "code review",
+    "mentoring",
+    "REST",
+    "software architecture"
+   ],
+   "nice": [
+    "llm-as-judge",
+    "pub/sub",
+    "gcp",
+    "rag"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": false,
+    "detail": "missing: LLM"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing 7"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 58,
+    "detail": "58% (7/12)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 86,
+    "detail": "86%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": false,
+    "value": 33,
+    "detail": "33%, headline lacks: staff, software"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [],
+  "verdict": "REJECT",
+  "score": 36,
+  "keywords": {
+   "missing_required": [
+    "LLM",
+    "hallucination",
+    "llm evaluation",
+    "ai-assisted development",
+    "claude code"
+   ],
+   "missing_nice": [
+    "llm-as-judge",
+    "pub/sub",
+    "gcp",
+    "rag"
+   ],
+   "skills_list_only": [
+    "TypeScript"
+   ],
+   "headline_words": [
+    "staff",
+    "software"
+   ]
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "li-pomelo-tech-lead-payments.txt",
+  "label": "Medium",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "Tech Lead - Real Time Payments",
+   "min_years": 7,
+   "min_lead_years": 1,
+   "knockout": [
+    "Java",
+    "payments"
+   ],
+   "required": [
+    "Java",
+    "microservices",
+    "distributed systems",
+    "event-driven",
+    "AWS",
+    "CI/CD",
+    "git",
+    "observability",
+    "tracing",
+    "incident response",
+    "payments",
+    "fintech",
+    "software architecture",
+    "one-on-ones",
+    "hiring",
+    "code review",
+    "ai-assisted development",
+    "claude code",
+    "stakeholder management"
+   ],
+   "nice": [
+    "Go"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing 7"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 74,
+    "detail": "74% (14/19)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 93,
+    "detail": "93%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": false,
+    "value": 40,
+    "detail": "40%, headline lacks: real, time, payments"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing 1"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [],
+  "verdict": "WEAK",
+  "score": 67,
+  "keywords": {
+   "missing_required": [
+    "distributed systems",
+    "git",
+    "tracing",
+    "ai-assisted development",
+    "claude code"
+   ],
+   "missing_nice": [
+    "Go"
+   ],
+   "skills_list_only": [
+    "stakeholder management"
+   ],
+   "headline_words": [
+    "real",
+    "time",
+    "payments"
+   ]
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "li-rocbird-fde-ai.txt",
+  "label": "Very low",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "Senior Forward Deployed AI Engineer",
+   "min_years": 5,
+   "min_lead_years": 0,
+   "knockout": [
+    "ai agents",
+    "English"
+   ],
+   "required": [
+    "Java",
+    "Python",
+    "REST",
+    "ai agents",
+    "LLM",
+    "function calling",
+    "MCP",
+    "OpenAI",
+    "Anthropic",
+    "oauth",
+    "JWT",
+    "AWS",
+    "Docker",
+    "CI/CD",
+    "client-facing"
+   ],
+   "nice": [
+    "payments",
+    "fintech",
+    "security"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": false,
+    "detail": "missing: ai agents"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing 5"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 47,
+    "detail": "47% (7/15)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 86,
+    "detail": "86%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": false,
+    "value": 40,
+    "detail": "40%, headline lacks: forward, deployed, ai"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": true,
+    "value": 67,
+    "detail": "67%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [
+   "start date",
+   "time zone overlap"
+  ],
+  "verdict": "REJECT",
+  "score": 39,
+  "keywords": {
+   "missing_required": [
+    "ai agents",
+    "LLM",
+    "function calling",
+    "MCP",
+    "OpenAI",
+    "Anthropic",
+    "oauth",
+    "JWT"
+   ],
+   "missing_nice": [
+    "security"
+   ],
+   "skills_list_only": [
+    "Python"
+   ],
+   "headline_words": [
+    "forward",
+    "deployed",
+    "ai"
+   ]
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "li-spaceinch-em-java.txt",
+  "label": "High",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "Engineering Manager (Hands-On / Java)",
+   "min_years": 7,
+   "min_lead_years": 2,
+   "knockout": [
+    "Java",
+    "Spring Boot",
+    "English"
+   ],
+   "required": [
+    "Java",
+    "Spring Boot",
+    "microservices",
+    "PostgreSQL",
+    "Docker",
+    "CI/CD",
+    "Kubernetes",
+    "software architecture",
+    "mentoring",
+    "client-facing",
+    "stakeholder management",
+    "ai-assisted development",
+    "code review"
+   ],
+   "nice": [
+    "AWS",
+    "GCP",
+    "performance tuning"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing 7"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": true,
+    "value": 92,
+    "detail": "92% (12/13)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 92,
+    "detail": "92%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 67,
+    "detail": "67%, headline lacks: manager"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 33,
+    "detail": "33%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing 2"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [
+   "visa or travel",
+   "contract type"
+  ],
+  "verdict": "ACCEPTABLE",
+  "score": 81,
+  "keywords": {
+   "missing_required": [
+    "ai-assisted development"
+   ],
+   "missing_nice": [
+    "GCP",
+    "performance tuning"
+   ],
+   "skills_list_only": [
+    "stakeholder management"
+   ],
+   "headline_words": [
+    "manager"
+   ]
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "li-yuno-em-payments.txt",
+  "label": "Medium",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "Engineering Manager - Core Payments",
+   "min_years": 5,
+   "min_lead_years": 1,
+   "knockout": [
+    "Java",
+    "payments",
+    "English"
+   ],
+   "required": [
+    "hiring",
+    "mentoring",
+    "payments",
+    "Java",
+    "microservices",
+    "event-driven",
+    "REST",
+    "SQL",
+    "security",
+    "ai-assisted development",
+    "claude code",
+    "agile",
+    "stakeholder management",
+    "code review",
+    "software architecture"
+   ],
+   "nice": [
+    "Go",
+    "Kotlin"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing 5"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": true,
+    "value": 80,
+    "detail": "80% (12/15)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 83,
+    "detail": "83%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": false,
+    "value": 25,
+    "detail": "25%, headline lacks: manager, core, payments"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing 1"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [],
+  "verdict": "ACCEPTABLE",
+  "score": 67,
+  "keywords": {
+   "missing_required": [
+    "security",
+    "ai-assisted development",
+    "claude code"
+   ],
+   "missing_nice": [
+    "Go",
+    "Kotlin"
+   ],
+   "skills_list_only": [
+    "agile",
+    "stakeholder management"
+   ],
+   "headline_words": [
+    "manager",
+    "core",
+    "payments"
+   ]
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "ruzora-java-backend.txt",
+  "label": "High",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "Java Backend Engineer",
+   "min_years": 5,
+   "min_lead_years": 0,
+   "knockout": [
+    "Java",
+    "Spring Boot",
+    "Kafka",
+    "English"
+   ],
+   "required": [
+    "Java 17",
+    "Spring Boot",
+    "JPA",
+    "SQL",
+    "PostgreSQL",
+    "Kafka",
+    "RabbitMQ",
+    "Maven",
+    "Gradle",
+    "Docker",
+    "Kubernetes",
+    "JUnit",
+    "Testcontainers"
+   ],
+   "nice": [
+    "Kotlin",
+    "Quarkus",
+    "Micronaut",
+    "JVM tuning"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing 5"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": true,
+    "value": 92,
+    "detail": "92% (12/13)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [],
+  "verdict": "ACCEPTABLE",
+  "score": 82,
+  "keywords": {
+   "missing_required": [
+    "RabbitMQ"
+   ],
+   "missing_nice": [
+    "Kotlin",
+    "Quarkus",
+    "Micronaut",
+    "JVM tuning"
+   ],
+   "skills_list_only": [],
+   "headline_words": []
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "synthetic-ai-lead.txt",
+  "label": "Very low",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "Lead AI Engineer",
+   "min_years": 6,
+   "min_lead_years": 3,
+   "knockout": [
+    "java",
+    "python",
+    "English"
+   ],
+   "required": [
+    "java",
+    "python",
+    "llm",
+    "openai",
+    "anthropic",
+    "rag",
+    "langchain",
+    "langgraph",
+    "vector database",
+    "ai agents",
+    "function calling"
+   ],
+   "nice": [
+    "kubernetes",
+    "mcp",
+    "llm evaluation",
+    "guardrails"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing 6"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 18,
+    "detail": "18% (2/11)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": false,
+    "value": 50,
+    "detail": "50%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 50,
+    "detail": "50%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 67,
+    "detail": "67%, headline lacks: ai"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 25,
+    "detail": "25%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing 3"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [],
+  "verdict": "WEAK",
+  "score": 36,
+  "keywords": {
+   "missing_required": [
+    "llm",
+    "openai",
+    "anthropic",
+    "rag",
+    "langchain",
+    "langgraph",
+    "vector database",
+    "ai agents",
+    "function calling"
+   ],
+   "missing_nice": [
+    "mcp",
+    "llm evaluation",
+    "guardrails"
+   ],
+   "skills_list_only": [
+    "python"
+   ],
+   "headline_words": [
+    "ai"
+   ]
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "synthetic-java-backend.txt",
+  "label": "High",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "Senior Java Backend Engineer",
+   "min_years": 5,
+   "min_lead_years": 2,
+   "knockout": [
+    "java",
+    "English"
+   ],
+   "required": [
+    "java",
+    "spring boot",
+    "sql",
+    "postgresql",
+    "kafka",
+    "rest",
+    "microservices",
+    "event-driven",
+    "docker",
+    "kubernetes",
+    "aws",
+    "ci/cd",
+    "github actions",
+    "jenkins",
+    "code review",
+    "mentoring",
+    "incident response",
+    "monitoring"
+   ],
+   "nice": [
+    "python",
+    "terraform",
+    "payments"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing 5"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": true,
+    "value": 100,
+    "detail": "100% (18/18)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing 2"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [],
+  "verdict": "STRONG",
+  "score": 96,
+  "keywords": {
+   "missing_required": [],
+   "missing_nice": [],
+   "skills_list_only": [],
+   "headline_words": []
+  }
+ },
+ {
+  "cv": "sample",
+  "posting": "talan-java-backend.txt",
+  "label": "High",
+  "cv_path": "src/main/resources/samples/cv.sample.txt",
+  "facts_path": "src/main/resources/samples/candidate.sample.json",
+  "job": {
+   "title": "Senior Java Backend Engineer",
+   "min_years": 5,
+   "min_lead_years": 0,
+   "knockout": [
+    "Java",
+    "Spring Boot",
+    "English"
+   ],
+   "required": [
+    "Java",
+    "Spring Boot",
+    "REST",
+    "system integration",
+    "Scrum",
+    "unit testing",
+    "code review"
+   ],
+   "nice": [
+    "React",
+    "TypeScript"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": true
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (0 hidden/garbled chars)",
+    "ok": true
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders",
+    "ok": true
+   },
+   {
+    "id": "G5",
+    "label": "States total years (10)",
+    "ok": true
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line",
+    "ok": true
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": true,
+    "detail": "CV 10 vs listing 5"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": true,
+    "value": 100,
+    "detail": "100% (7/7)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 86,
+    "detail": "86%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 4,
+    "detail": "CV 4 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 23,
+    "detail": "23% of 13 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "team size stated"
+   }
+  ],
+  "confirm": [],
+  "verdict": "STRONG",
+  "score": 94,
+  "keywords": {
+   "missing_required": [],
+   "missing_nice": [],
+   "skills_list_only": [
+    "Scrum"
+   ],
+   "headline_words": []
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "agileengine-ai-agent.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "Senior AI Agent Engineer",
+   "min_years": 5,
+   "min_lead_years": 0,
+   "knockout": [
+    "Java",
+    "Spring Boot",
+    "LLM",
+    "English"
+   ],
+   "required": [
+    "Java",
+    "Spring Boot",
+    "LLM",
+    "AI agents",
+    "TypeScript",
+    "Python",
+    "REST",
+    "AWS",
+    "event-driven",
+    "distributed systems",
+    "testing",
+    "observability",
+    "security"
+   ],
+   "nice": [
+    "code review",
+    "workflow engine",
+    "technical leadership"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": false,
+    "detail": "missing: LLM"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing 5"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 46,
+    "detail": "46% (6/13)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 83,
+    "detail": "83%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 67,
+    "detail": "67%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": false,
+    "value": 25,
+    "detail": "25%, headline lacks: senior, ai, agent"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 33,
+    "detail": "33%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 0,
+    "detail": "CV 0 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [],
+  "verdict": "REJECT (fix CV)",
+  "score": 0,
+  "keywords": {
+   "missing_required": [
+    "LLM",
+    "AI agents",
+    "TypeScript",
+    "event-driven",
+    "distributed systems",
+    "observability",
+    "security"
+   ],
+   "missing_nice": [
+    "workflow engine",
+    "technical leadership"
+   ],
+   "skills_list_only": [
+    "Python"
+   ],
+   "headline_words": [
+    "senior",
+    "ai",
+    "agent"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "dillo-data-gcp.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "Senior Data Engineer",
+   "min_years": 6,
+   "min_lead_years": 0,
+   "knockout": [
+    "Python",
+    "SQL",
+    "BigQuery"
+   ],
+   "required": [
+    "GCP",
+    "Dataproc",
+    "Dataflow",
+    "BigQuery",
+    "SQL",
+    "dbt",
+    "Python",
+    "Airflow",
+    "ETL",
+    "Git",
+    "data warehouse",
+    "data modeling"
+   ],
+   "nice": [
+    "Talend",
+    "Fivetran"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": false,
+    "detail": "missing: SQL, BigQuery"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing 6"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 8,
+    "detail": "8% (1/12)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": false,
+    "value": 33,
+    "detail": "33%, headline lacks: senior, data"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 0,
+    "detail": "CV 0 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [],
+  "verdict": "REJECT (fix CV)",
+  "score": 0,
+  "keywords": {
+   "missing_required": [
+    "GCP",
+    "Dataproc",
+    "Dataflow",
+    "BigQuery",
+    "SQL",
+    "dbt",
+    "Airflow",
+    "ETL",
+    "Git",
+    "data warehouse",
+    "data modeling"
+   ],
+   "missing_nice": [
+    "Talend",
+    "Fivetran"
+   ],
+   "skills_list_only": [
+    "Python"
+   ],
+   "headline_words": [
+    "senior",
+    "data"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "inject-ignore-instructions.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "Senior Java Developer",
+   "min_years": 5,
+   "min_lead_years": 0,
+   "knockout": [
+    "java",
+    "English"
+   ],
+   "required": [
+    "java",
+    "java 17",
+    "spring boot",
+    "postgresql",
+    "kafka",
+    "rest",
+    "microservices",
+    "docker",
+    "aws"
+   ],
+   "nice": []
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing 5"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": true,
+    "value": 89,
+    "detail": "89% (8/9)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 67,
+    "detail": "67%, headline lacks: senior"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 0,
+    "detail": "CV 0 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [],
+  "verdict": "REJECT (fix CV)",
+  "score": 48,
+  "keywords": {
+   "missing_required": [
+    "java 17"
+   ],
+   "missing_nice": [],
+   "skills_list_only": [],
+   "headline_words": [
+    "senior"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "inject-role-tokens.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "Backend Tech Lead",
+   "min_years": 6,
+   "min_lead_years": 2,
+   "knockout": [
+    "Java",
+    "Spring Boot"
+   ],
+   "required": [
+    "Java",
+    "Spring Boot",
+    "microservices",
+    "PostgreSQL",
+    "Kafka",
+    "AWS",
+    "Docker",
+    "code review",
+    "mentoring"
+   ],
+   "nice": [
+    "Kubernetes",
+    "Terraform"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing 6"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": true,
+    "value": 100,
+    "detail": "100% (9/9)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": false,
+    "value": 0,
+    "detail": "0%, headline lacks: backend, tech, lead"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": true,
+    "value": 50,
+    "detail": "50%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": false,
+    "value": 0,
+    "detail": "CV 0 vs listing 2"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [],
+  "verdict": "REJECT (fix CV)",
+  "score": 31,
+  "keywords": {
+   "missing_required": [],
+   "missing_nice": [
+    "Terraform"
+   ],
+   "skills_list_only": [],
+   "headline_words": [
+    "backend",
+    "tech",
+    "lead"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "li-agileengine-tech-lead-modernization.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "Tech Lead Software Engineer",
+   "min_years": 0,
+   "min_lead_years": 0,
+   "knockout": [
+    "legacy modernization",
+    "ai-assisted development",
+    "English"
+   ],
+   "required": [
+    "technical leadership",
+    "React",
+    "REST",
+    "software architecture",
+    "legacy modernization",
+    "migration",
+    "data modeling",
+    "security",
+    "oauth",
+    "testing",
+    "CI/CD",
+    "git",
+    "ai-assisted development",
+    "code review",
+    "stakeholder management"
+   ],
+   "nice": [
+    "payments",
+    "RAG",
+    "observability",
+    "Terraform",
+    "fintech"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": false,
+    "detail": "missing: legacy modernization, ai-assisted development"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing not stated"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 27,
+    "detail": "27% (4/15)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 75,
+    "detail": "75%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 50,
+    "detail": "50%, headline lacks: tech, lead"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 0,
+    "detail": "CV 0 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [
+   "start date"
+  ],
+  "verdict": "REJECT (fix CV)",
+  "score": 0,
+  "keywords": {
+   "missing_required": [
+    "technical leadership",
+    "software architecture",
+    "legacy modernization",
+    "migration",
+    "data modeling",
+    "security",
+    "oauth",
+    "CI/CD",
+    "git",
+    "ai-assisted development",
+    "stakeholder management"
+   ],
+   "missing_nice": [
+    "payments",
+    "RAG",
+    "observability",
+    "Terraform",
+    "fintech"
+   ],
+   "skills_list_only": [
+    "React"
+   ],
+   "headline_words": [
+    "tech",
+    "lead"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "li-aplazo-tech-lead-manager.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "Technical Lead Manager",
+   "min_years": 4,
+   "min_lead_years": 1,
+   "knockout": [
+    "Java",
+    "Spring Boot",
+    "English"
+   ],
+   "required": [
+    "Java",
+    "Spring Boot",
+    "React",
+    "PostgreSQL",
+    "AWS",
+    "CI/CD",
+    "observability",
+    "code review",
+    "mentoring",
+    "one-on-ones",
+    "hiring",
+    "sprint planning",
+    "incident response",
+    "ai-assisted development",
+    "stakeholder management",
+    "software architecture",
+    "testing"
+   ],
+   "nice": [
+    "fintech",
+    "payments",
+    "Python",
+    "Go",
+    "Angular",
+    "MongoDB",
+    "Datadog",
+    "Pulumi",
+    "Jenkins",
+    "Lambda"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing 4"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 47,
+    "detail": "47% (8/17)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 88,
+    "detail": "88%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": false,
+    "value": 0,
+    "detail": "0%, headline lacks: tech, lead, manager"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 10,
+    "detail": "10%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": false,
+    "value": 0,
+    "detail": "CV 0 vs listing 1"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [],
+  "verdict": "REJECT (fix CV)",
+  "score": 1,
+  "keywords": {
+   "missing_required": [
+    "CI/CD",
+    "observability",
+    "one-on-ones",
+    "hiring",
+    "sprint planning",
+    "incident response",
+    "ai-assisted development",
+    "stakeholder management",
+    "software architecture"
+   ],
+   "missing_nice": [
+    "fintech",
+    "payments",
+    "Go",
+    "Angular",
+    "MongoDB",
+    "Datadog",
+    "Pulumi",
+    "Jenkins",
+    "Lambda"
+   ],
+   "skills_list_only": [
+    "React"
+   ],
+   "headline_words": [
+    "tech",
+    "lead",
+    "manager"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "li-bairesdev-java-react-tl.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "FullStack Java + React Technical Leader",
+   "min_years": 5,
+   "min_lead_years": 0,
+   "knockout": [
+    "Java",
+    "React",
+    "English"
+   ],
+   "required": [
+    "Java",
+    "React",
+    "software architecture",
+    "distributed systems",
+    "monitoring",
+    "CI/CD",
+    "code review",
+    "mentoring",
+    "agile",
+    "stakeholder management",
+    "client-facing",
+    "technical leadership"
+   ],
+   "nice": [
+    "AWS",
+    "Docker"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing 5"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 33,
+    "detail": "33% (4/12)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 75,
+    "detail": "75%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 50,
+    "detail": "50%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": false,
+    "value": 20,
+    "detail": "20%, headline lacks: fullstack, react, tech, lead"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 0,
+    "detail": "CV 0 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [],
+  "verdict": "REJECT (fix CV)",
+  "score": 9,
+  "keywords": {
+   "missing_required": [
+    "software architecture",
+    "distributed systems",
+    "monitoring",
+    "CI/CD",
+    "agile",
+    "stakeholder management",
+    "client-facing",
+    "technical leadership"
+   ],
+   "missing_nice": [],
+   "skills_list_only": [
+    "React"
+   ],
+   "headline_words": [
+    "fullstack",
+    "react",
+    "tech",
+    "lead"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "li-bridgenext-ai-tech-lead.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "AI Technical Lead",
+   "min_years": 8,
+   "min_lead_years": 0,
+   "knockout": [
+    "LLM",
+    "RAG",
+    "Azure",
+    "English"
+   ],
+   "required": [
+    "LLM",
+    "RAG",
+    "ai agents",
+    "MCP",
+    "prompt engineering",
+    "structured outputs",
+    "function calling",
+    "Azure",
+    "Azure OpenAI",
+    "Python",
+    "microservices",
+    "event-driven",
+    "CI/CD",
+    "ai-assisted development",
+    "llm evaluation",
+    "guardrails",
+    "observability",
+    "mentoring",
+    "code review",
+    "client-facing",
+    "technical leadership"
+   ],
+   "nice": [
+    "LangChain",
+    "LangGraph",
+    "Semantic Kernel",
+    "LlamaIndex",
+    "vector database"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": false,
+    "detail": "missing: LLM, RAG, Azure"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing 8"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 19,
+    "detail": "19% (4/21)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 75,
+    "detail": "75%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": false,
+    "value": 0,
+    "detail": "0%, headline lacks: ai, tech, lead"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 0,
+    "detail": "CV 0 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [],
+  "verdict": "REJECT (fix CV)",
+  "score": 0,
+  "keywords": {
+   "missing_required": [
+    "LLM",
+    "RAG",
+    "ai agents",
+    "MCP",
+    "prompt engineering",
+    "structured outputs",
+    "function calling",
+    "Azure",
+    "Azure OpenAI",
+    "event-driven",
+    "CI/CD",
+    "ai-assisted development",
+    "llm evaluation",
+    "guardrails",
+    "observability",
+    "client-facing",
+    "technical leadership"
+   ],
+   "missing_nice": [
+    "LangChain",
+    "LangGraph",
+    "Semantic Kernel",
+    "LlamaIndex",
+    "vector database"
+   ],
+   "skills_list_only": [
+    "Python"
+   ],
+   "headline_words": [
+    "ai",
+    "tech",
+    "lead"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "li-enumerate-lead-ai-engineer.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "Lead Full Stack AI Engineer (Tech Lead)",
+   "min_years": 7,
+   "min_lead_years": 0,
+   "knockout": [
+    "LLM",
+    "RAG",
+    "English"
+   ],
+   "required": [
+    "LLM",
+    "RAG",
+    "embeddings",
+    "vector database",
+    "function calling",
+    "prompt engineering",
+    "React",
+    "Python",
+    "Java",
+    "data modeling",
+    "data warehouse",
+    "etl",
+    "REST",
+    "testing",
+    "observability",
+    "code review",
+    "mentoring",
+    "software architecture",
+    "technical leadership"
+   ],
+   "nice": [
+    "ai agents",
+    "LangChain",
+    "LlamaIndex",
+    "LangGraph",
+    "llm evaluation",
+    "AWS",
+    "guardrails"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": false,
+    "detail": "missing: LLM, RAG"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing 7"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 37,
+    "detail": "37% (7/19)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 71,
+    "detail": "71%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": false,
+    "value": 17,
+    "detail": "17%, headline lacks: lead, full, stack, ai, tech"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 14,
+    "detail": "14%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 0,
+    "detail": "CV 0 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [
+   "contract type"
+  ],
+  "verdict": "REJECT (fix CV)",
+  "score": 0,
+  "keywords": {
+   "missing_required": [
+    "LLM",
+    "RAG",
+    "embeddings",
+    "vector database",
+    "function calling",
+    "prompt engineering",
+    "data modeling",
+    "data warehouse",
+    "etl",
+    "observability",
+    "software architecture",
+    "technical leadership"
+   ],
+   "missing_nice": [
+    "ai agents",
+    "LangChain",
+    "LlamaIndex",
+    "LangGraph",
+    "llm evaluation",
+    "guardrails"
+   ],
+   "skills_list_only": [
+    "React",
+    "Python"
+   ],
+   "headline_words": [
+    "lead",
+    "full",
+    "stack",
+    "ai",
+    "tech"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "li-fever-tech-lead.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "Tech Lead",
+   "min_years": 0,
+   "min_lead_years": 0,
+   "knockout": [
+    "Python",
+    "English"
+   ],
+   "required": [
+    "Python",
+    "microservices",
+    "distributed systems",
+    "event-driven",
+    "Kafka",
+    "RabbitMQ",
+    "concurrency",
+    "SQL",
+    "REST",
+    "performance tuning",
+    "software architecture",
+    "mentoring",
+    "code review",
+    "testing",
+    "technical leadership",
+    "stakeholder management"
+   ],
+   "nice": [
+    "Django",
+    "Flask",
+    "PostgreSQL",
+    "Redis",
+    "AWS",
+    "Docker",
+    "Kubernetes",
+    "CI/CD",
+    "agile"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing not stated"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 44,
+    "detail": "44% (7/16)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 86,
+    "detail": "86%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": false,
+    "value": 0,
+    "detail": "0%, headline lacks: tech, lead"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": true,
+    "value": 44,
+    "detail": "44%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 0,
+    "detail": "CV 0 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [
+   "contract type"
+  ],
+  "verdict": "REJECT (fix CV)",
+  "score": 3,
+  "keywords": {
+   "missing_required": [
+    "distributed systems",
+    "event-driven",
+    "RabbitMQ",
+    "concurrency",
+    "SQL",
+    "performance tuning",
+    "software architecture",
+    "technical leadership",
+    "stakeholder management"
+   ],
+   "missing_nice": [
+    "Django",
+    "Flask",
+    "Redis",
+    "CI/CD",
+    "agile"
+   ],
+   "skills_list_only": [
+    "Python"
+   ],
+   "headline_words": [
+    "tech",
+    "lead"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "li-lumenalta-se-lead.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "Software Engineer Lead",
+   "min_years": 8,
+   "min_lead_years": 2,
+   "knockout": [
+    "Java",
+    "Spring Boot",
+    "Kafka",
+    "English"
+   ],
+   "required": [
+    "Java",
+    "Spring Boot",
+    "spring data",
+    "spring security",
+    "Kafka",
+    "event-driven",
+    "distributed systems",
+    "PostgreSQL",
+    "React",
+    "TypeScript",
+    "AWS",
+    "observability",
+    "tracing",
+    "incident response",
+    "jvm tuning",
+    "concurrency",
+    "code review",
+    "mentoring",
+    "client-facing",
+    "software architecture"
+   ],
+   "nice": [
+    "legacy modernization",
+    "CI/CD",
+    "Docker",
+    "Kubernetes",
+    "Terraform",
+    "Datadog",
+    "Prometheus",
+    "Grafana",
+    "OpenTelemetry",
+    "JUnit",
+    "Jest",
+    "Cypress"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing 8"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 40,
+    "detail": "40% (8/20)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 88,
+    "detail": "88%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 67,
+    "detail": "67%, headline lacks: lead"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 25,
+    "detail": "25%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": false,
+    "value": 0,
+    "detail": "CV 0 vs listing 2"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [
+   "time zone overlap",
+   "application deadline"
+  ],
+  "verdict": "REJECT (fix CV)",
+  "score": 6,
+  "keywords": {
+   "missing_required": [
+    "spring data",
+    "spring security",
+    "event-driven",
+    "distributed systems",
+    "TypeScript",
+    "observability",
+    "tracing",
+    "incident response",
+    "jvm tuning",
+    "concurrency",
+    "client-facing",
+    "software architecture"
+   ],
+   "missing_nice": [
+    "legacy modernization",
+    "CI/CD",
+    "Terraform",
+    "Datadog",
+    "Prometheus",
+    "Grafana",
+    "OpenTelemetry",
+    "Jest",
+    "Cypress"
+   ],
+   "skills_list_only": [
+    "React"
+   ],
+   "headline_words": [
+    "lead"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "li-ollyolly-staff.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "Staff Software Engineer",
+   "min_years": 7,
+   "min_lead_years": 0,
+   "knockout": [
+    "TypeScript",
+    "LLM",
+    "English"
+   ],
+   "required": [
+    "TypeScript",
+    "SQL",
+    "PostgreSQL",
+    "LLM",
+    "hallucination",
+    "llm evaluation",
+    "ai-assisted development",
+    "claude code",
+    "code review",
+    "mentoring",
+    "REST",
+    "software architecture"
+   ],
+   "nice": [
+    "llm-as-judge",
+    "pub/sub",
+    "gcp",
+    "rag"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": false,
+    "detail": "missing: TypeScript, LLM"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing 7"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 33,
+    "detail": "33% (4/12)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 67,
+    "detail": "67%, headline lacks: staff"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 0,
+    "detail": "CV 0 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [],
+  "verdict": "REJECT (fix CV)",
+  "score": 0,
+  "keywords": {
+   "missing_required": [
+    "TypeScript",
+    "SQL",
+    "LLM",
+    "hallucination",
+    "llm evaluation",
+    "ai-assisted development",
+    "claude code",
+    "software architecture"
+   ],
+   "missing_nice": [
+    "llm-as-judge",
+    "pub/sub",
+    "gcp",
+    "rag"
+   ],
+   "skills_list_only": [],
+   "headline_words": [
+    "staff"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "li-pomelo-tech-lead-payments.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "Tech Lead - Real Time Payments",
+   "min_years": 7,
+   "min_lead_years": 1,
+   "knockout": [
+    "Java",
+    "payments"
+   ],
+   "required": [
+    "Java",
+    "microservices",
+    "distributed systems",
+    "event-driven",
+    "AWS",
+    "CI/CD",
+    "git",
+    "observability",
+    "tracing",
+    "incident response",
+    "payments",
+    "fintech",
+    "software architecture",
+    "one-on-ones",
+    "hiring",
+    "code review",
+    "ai-assisted development",
+    "claude code",
+    "stakeholder management"
+   ],
+   "nice": [
+    "Go"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": false,
+    "detail": "missing: payments"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing 7"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 21,
+    "detail": "21% (4/19)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 50,
+    "detail": "50%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": false,
+    "value": 0,
+    "detail": "0%, headline lacks: tech, lead, real, time, payments"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": false,
+    "value": 0,
+    "detail": "CV 0 vs listing 1"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [],
+  "verdict": "REJECT (fix CV)",
+  "score": 0,
+  "keywords": {
+   "missing_required": [
+    "distributed systems",
+    "event-driven",
+    "CI/CD",
+    "git",
+    "observability",
+    "tracing",
+    "incident response",
+    "payments",
+    "fintech",
+    "software architecture",
+    "one-on-ones",
+    "hiring",
+    "ai-assisted development",
+    "claude code",
+    "stakeholder management"
+   ],
+   "missing_nice": [
+    "Go"
+   ],
+   "skills_list_only": [],
+   "headline_words": [
+    "tech",
+    "lead",
+    "real",
+    "time",
+    "payments"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "li-rocbird-fde-ai.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "Senior Forward Deployed AI Engineer",
+   "min_years": 5,
+   "min_lead_years": 0,
+   "knockout": [
+    "ai agents",
+    "English"
+   ],
+   "required": [
+    "Java",
+    "Python",
+    "REST",
+    "ai agents",
+    "LLM",
+    "function calling",
+    "MCP",
+    "OpenAI",
+    "Anthropic",
+    "oauth",
+    "JWT",
+    "AWS",
+    "Docker",
+    "CI/CD",
+    "client-facing"
+   ],
+   "nice": [
+    "payments",
+    "fintech",
+    "security"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": false,
+    "detail": "missing: ai agents"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing 5"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 33,
+    "detail": "33% (5/15)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 80,
+    "detail": "80%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": false,
+    "value": 20,
+    "detail": "20%, headline lacks: senior, forward, deployed, ai"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 0,
+    "detail": "CV 0 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [
+   "start date",
+   "time zone overlap"
+  ],
+  "verdict": "REJECT (fix CV)",
+  "score": 0,
+  "keywords": {
+   "missing_required": [
+    "ai agents",
+    "LLM",
+    "function calling",
+    "MCP",
+    "OpenAI",
+    "Anthropic",
+    "oauth",
+    "JWT",
+    "CI/CD",
+    "client-facing"
+   ],
+   "missing_nice": [
+    "payments",
+    "fintech",
+    "security"
+   ],
+   "skills_list_only": [
+    "Python"
+   ],
+   "headline_words": [
+    "senior",
+    "forward",
+    "deployed",
+    "ai"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "li-spaceinch-em-java.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "Engineering Manager (Hands-On / Java)",
+   "min_years": 7,
+   "min_lead_years": 2,
+   "knockout": [
+    "Java",
+    "Spring Boot",
+    "English"
+   ],
+   "required": [
+    "Java",
+    "Spring Boot",
+    "microservices",
+    "PostgreSQL",
+    "Docker",
+    "CI/CD",
+    "Kubernetes",
+    "software architecture",
+    "mentoring",
+    "client-facing",
+    "stakeholder management",
+    "ai-assisted development",
+    "code review"
+   ],
+   "nice": [
+    "AWS",
+    "GCP",
+    "performance tuning"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing 7"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 62,
+    "detail": "62% (8/13)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 88,
+    "detail": "88%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 67,
+    "detail": "67%, headline lacks: manager"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 33,
+    "detail": "33%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": false,
+    "value": 0,
+    "detail": "CV 0 vs listing 2"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [
+   "visa or travel",
+   "contract type"
+  ],
+  "verdict": "REJECT (fix CV)",
+  "score": 17,
+  "keywords": {
+   "missing_required": [
+    "CI/CD",
+    "software architecture",
+    "client-facing",
+    "stakeholder management",
+    "ai-assisted development"
+   ],
+   "missing_nice": [
+    "GCP",
+    "performance tuning"
+   ],
+   "skills_list_only": [
+    "Kubernetes"
+   ],
+   "headline_words": [
+    "manager"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "li-yuno-em-payments.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "Engineering Manager - Core Payments",
+   "min_years": 5,
+   "min_lead_years": 1,
+   "knockout": [
+    "Java",
+    "payments",
+    "English"
+   ],
+   "required": [
+    "hiring",
+    "mentoring",
+    "payments",
+    "Java",
+    "microservices",
+    "event-driven",
+    "REST",
+    "SQL",
+    "security",
+    "ai-assisted development",
+    "claude code",
+    "agile",
+    "stakeholder management",
+    "code review",
+    "software architecture"
+   ],
+   "nice": [
+    "Go",
+    "Kotlin"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": false,
+    "detail": "missing: payments"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing 5"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 33,
+    "detail": "33% (5/15)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 50,
+    "detail": "50%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": false,
+    "value": 25,
+    "detail": "25%, headline lacks: manager, core, payments"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": false,
+    "value": 0,
+    "detail": "CV 0 vs listing 1"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [],
+  "verdict": "REJECT (fix CV)",
+  "score": 0,
+  "keywords": {
+   "missing_required": [
+    "hiring",
+    "payments",
+    "event-driven",
+    "SQL",
+    "security",
+    "ai-assisted development",
+    "claude code",
+    "agile",
+    "stakeholder management",
+    "software architecture"
+   ],
+   "missing_nice": [
+    "Go",
+    "Kotlin"
+   ],
+   "skills_list_only": [],
+   "headline_words": [
+    "manager",
+    "core",
+    "payments"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "ruzora-java-backend.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "Java Backend Engineer",
+   "min_years": 5,
+   "min_lead_years": 0,
+   "knockout": [
+    "Java",
+    "Spring Boot",
+    "Kafka",
+    "English"
+   ],
+   "required": [
+    "Java 17",
+    "Spring Boot",
+    "JPA",
+    "SQL",
+    "PostgreSQL",
+    "Kafka",
+    "RabbitMQ",
+    "Maven",
+    "Gradle",
+    "Docker",
+    "Kubernetes",
+    "JUnit",
+    "Testcontainers"
+   ],
+   "nice": [
+    "Kotlin",
+    "Quarkus",
+    "Micronaut",
+    "JVM tuning"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing 5"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 46,
+    "detail": "46% (6/13)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 83,
+    "detail": "83%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 67,
+    "detail": "67%, headline lacks: backend"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 0,
+    "detail": "0%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 0,
+    "detail": "CV 0 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [],
+  "verdict": "REJECT (fix CV)",
+  "score": 16,
+  "keywords": {
+   "missing_required": [
+    "Java 17",
+    "JPA",
+    "SQL",
+    "RabbitMQ",
+    "Maven",
+    "Gradle",
+    "Testcontainers"
+   ],
+   "missing_nice": [
+    "Kotlin",
+    "Quarkus",
+    "Micronaut",
+    "JVM tuning"
+   ],
+   "skills_list_only": [
+    "Kubernetes"
+   ],
+   "headline_words": [
+    "backend"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "synthetic-ai-lead.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "Lead AI Engineer",
+   "min_years": 6,
+   "min_lead_years": 3,
+   "knockout": [
+    "java",
+    "python",
+    "English"
+   ],
+   "required": [
+    "java",
+    "python",
+    "llm",
+    "openai",
+    "anthropic",
+    "rag",
+    "langchain",
+    "langgraph",
+    "vector database",
+    "ai agents",
+    "function calling"
+   ],
+   "nice": [
+    "kubernetes",
+    "mcp",
+    "llm evaluation",
+    "guardrails"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing 6"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 18,
+    "detail": "18% (2/11)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": false,
+    "value": 50,
+    "detail": "50%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 50,
+    "detail": "50%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": false,
+    "value": 33,
+    "detail": "33%, headline lacks: lead, ai"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 25,
+    "detail": "25%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": false,
+    "value": 0,
+    "detail": "CV 0 vs listing 3"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [],
+  "verdict": "REJECT (fix CV)",
+  "score": 0,
+  "keywords": {
+   "missing_required": [
+    "llm",
+    "openai",
+    "anthropic",
+    "rag",
+    "langchain",
+    "langgraph",
+    "vector database",
+    "ai agents",
+    "function calling"
+   ],
+   "missing_nice": [
+    "mcp",
+    "llm evaluation",
+    "guardrails"
+   ],
+   "skills_list_only": [
+    "python"
+   ],
+   "headline_words": [
+    "lead",
+    "ai"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "synthetic-java-backend.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "Senior Java Backend Engineer",
+   "min_years": 5,
+   "min_lead_years": 2,
+   "knockout": [
+    "java",
+    "English"
+   ],
+   "required": [
+    "java",
+    "spring boot",
+    "sql",
+    "postgresql",
+    "kafka",
+    "rest",
+    "microservices",
+    "event-driven",
+    "docker",
+    "kubernetes",
+    "aws",
+    "ci/cd",
+    "github actions",
+    "jenkins",
+    "code review",
+    "mentoring",
+    "incident response",
+    "monitoring"
+   ],
+   "nice": [
+    "python",
+    "terraform",
+    "payments"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing 5"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 61,
+    "detail": "61% (11/18)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 91,
+    "detail": "91%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 50,
+    "detail": "50%, headline lacks: senior, backend"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": false,
+    "value": 33,
+    "detail": "33%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": false,
+    "value": 0,
+    "detail": "CV 0 vs listing 2"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [],
+  "verdict": "REJECT (fix CV)",
+  "score": 15,
+  "keywords": {
+   "missing_required": [
+    "sql",
+    "event-driven",
+    "ci/cd",
+    "github actions",
+    "jenkins",
+    "incident response",
+    "monitoring"
+   ],
+   "missing_nice": [
+    "terraform",
+    "payments"
+   ],
+   "skills_list_only": [
+    "kubernetes"
+   ],
+   "headline_words": [
+    "senior",
+    "backend"
+   ]
+  }
+ },
+ {
+  "cv": "broken",
+  "posting": "talan-java-backend.txt",
+  "label": "Very low",
+  "cv_path": "src/test/resources/parity/cv-broken.txt",
+  "facts_path": "src/test/resources/parity/candidate-broken.json",
+  "job": {
+   "title": "Senior Java Backend Engineer",
+   "min_years": 5,
+   "min_lead_years": 0,
+   "knockout": [
+    "Java",
+    "Spring Boot",
+    "English"
+   ],
+   "required": [
+    "Java",
+    "Spring Boot",
+    "REST",
+    "system integration",
+    "Scrum",
+    "unit testing",
+    "code review"
+   ],
+   "nice": [
+    "React",
+    "TypeScript"
+   ]
+  },
+  "gates": [
+   {
+    "id": "G1",
+    "label": "Name on one line at the top",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Email readable",
+    "ok": true
+   },
+   {
+    "id": "G1",
+    "label": "Phone readable",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Summary' heading",
+    "ok": false
+   },
+   {
+    "id": "G2",
+    "label": "'Experience' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Skills' heading",
+    "ok": true
+   },
+   {
+    "id": "G2",
+    "label": "'Education' heading",
+    "ok": false
+   },
+   {
+    "id": "G3",
+    "label": "Clean text (3 hidden/garbled chars)",
+    "ok": false
+   },
+   {
+    "id": "G4",
+    "label": "No placeholders (found ['[City]', '[Country]', 'your-profile', '[N]'])",
+    "ok": false
+   },
+   {
+    "id": "G5",
+    "label": "States total years (none)",
+    "ok": false
+   },
+   {
+    "id": "G6",
+    "label": "Every job has its dates on the same line (not: Quarry Soft)",
+    "ok": false
+   }
+  ],
+  "match": {
+   "M1": {
+    "label": "Knockout skills",
+    "ok": true,
+    "detail": "all present"
+   },
+   "M2": {
+    "label": "Years of experience",
+    "ok": false,
+    "detail": "CV None vs listing 5"
+   },
+   "M3": {
+    "label": "Required keyword coverage",
+    "ok": false,
+    "value": 71,
+    "detail": "71% (5/7)"
+   },
+   "M4": {
+    "label": "Skills backed by experience bullets",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M5": {
+    "label": "Core skills in last 2 jobs",
+    "ok": true,
+    "value": 100,
+    "detail": "100%"
+   },
+   "M6": {
+    "label": "Headline matches job title",
+    "ok": true,
+    "value": 50,
+    "detail": "50%, headline lacks: senior, backend"
+   },
+   "M7": {
+    "label": "Nice-to-have coverage",
+    "ok": true,
+    "value": 50,
+    "detail": "50%"
+   },
+   "M8": {
+    "label": "Leadership years",
+    "ok": true,
+    "value": 0,
+    "detail": "CV 0 vs listing not stated"
+   }
+  },
+  "quality": [
+   {
+    "id": "Q1",
+    "label": "Bullets with measurable results",
+    "ok": false,
+    "value": 0,
+    "detail": "0% of 2 experience bullets have a number (target 30%)"
+   },
+   {
+    "id": "Q2",
+    "label": "Leadership scope stated",
+    "ok": true,
+    "detail": "no lead roles"
+   }
+  ],
+  "confirm": [],
+  "verdict": "REJECT (fix CV)",
+  "score": 33,
+  "keywords": {
+   "missing_required": [
+    "system integration",
+    "Scrum"
+   ],
+   "missing_nice": [
+    "TypeScript"
+   ],
+   "skills_list_only": [],
+   "headline_words": [
+    "senior",
+    "backend"
+   ]
+  }
+ }
+]

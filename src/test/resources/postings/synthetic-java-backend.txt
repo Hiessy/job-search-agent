@@ -1,0 +1,24 @@
+Senior Java Backend Engineer at Acme Freight — Remote LATAM | LinkedIn
+Synthetic posting written for tests. It mimics the free-text layout of a LinkedIn job page.
+
+About the job
+Acme Freight moves containers across the Americas. We are growing the platform team that owns booking,
+pricing and tracking services.
+
+What you will do
+Design and build Spring Boot microservices that handle thousands of bookings per minute.
+Own services in production: monitoring, alerting and incident response.
+Review pull requests and mentor other engineers.
+
+Requirements
+5+ years of experience with Java and Spring Boot.
+2+ years leading engineering teams.
+Strong SQL and PostgreSQL skills; Kafka or another event-driven platform.
+Docker, Kubernetes and AWS in production.
+REST API design and CI/CD with GitHub Actions or Jenkins.
+English B2 or higher.
+
+Nice to have
+Terraform, Python, payments experience.
+
+Source: https://jobs.example.com/acme-freight/senior-java-backend (Acme Freight, synthetic, remote LATAM)

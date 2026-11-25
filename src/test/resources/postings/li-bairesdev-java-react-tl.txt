@@ -1,0 +1,7 @@
+Title: FullStack Java + React Technical Leader
+Min years: 5
+Min lead years: 0
+Knockout: Java, React, English
+Required: Java, React, software architecture, distributed systems, monitoring, CI/CD, code review, mentoring, agile, stakeholder management, client-facing, technical leadership
+Nice to have: AWS, Docker
+Source: https://www.linkedin.com/jobs/view/4494381578/ (BairesDev, remote, LinkedIn, read 2026-11-24)

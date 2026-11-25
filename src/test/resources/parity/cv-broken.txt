@@ -1,0 +1,17 @@
+Jordan Lee
+Software Engineer​ | Javaㅤ Developer
+
+[City], [Country] · jordan.lee@example.org · +44 7700 900123 · linkedin.com/in/your-profile
+
+Profile
+Java developer who likes clean code and fast feedback loops. Increased throughput by [N]% on the main API.
+
+Experience
+Lead Developer, Quarry Soft
+    Led a small team building Spring Boot REST services on PostgreSQL. Mentoring juniors, code review.
+Developer, Oakline | 2017 - 2021
+    Built Java microservices with Kafka and Docker on AWS. Wrote unit tests with JUnit and Mockito.
+
+Skills
+Java, Spring Boot, PostgreSQL, Kafka, Docker, AWS, Kubernetes, Python, React, English (fluent)
+�

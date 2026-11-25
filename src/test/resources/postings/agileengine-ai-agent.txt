@@ -1,0 +1,9 @@
+Title: Senior AI Agent Engineer
+Min years: 5
+Knockout: Java, Spring Boot, LLM, English
+Required: Java, Spring Boot, LLM, AI agents, TypeScript, Python, REST, AWS, event-driven, distributed systems, testing, observability, security
+Nice to have: code review, workflow engine, technical leadership
+Source: https://freehire.me/jobs/senior-ai-agent-engineer-remote-enterprise-llm-workflows-randstad-argentina-s-a-uj7tfu4g (AgileEngine via Randstad Argentina, remote Argentina, open, posted 2026-11-18)
+
+Design and build agentic workflows and AI-powered products for enterprise customers. Orchestrate
+workflows, integrate APIs, ensure robust testing and security, influence engineering practices.

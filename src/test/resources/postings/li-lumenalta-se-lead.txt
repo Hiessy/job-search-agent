@@ -1,0 +1,8 @@
+Title: Software Engineer Lead
+Min years: 8
+Min lead years: 2
+Knockout: Java, Spring Boot, Kafka, English
+Required: Java, Spring Boot, spring data, spring security, Kafka, event-driven, distributed systems, PostgreSQL, React, TypeScript, AWS, observability, tracing, incident response, jvm tuning, concurrency, code review, mentoring, client-facing, software architecture
+Nice to have: legacy modernization, CI/CD, Docker, Kubernetes, Terraform, Datadog, Prometheus, Grafana, OpenTelemetry, JUnit, Jest, Cypress
+Constraints: full overlap with US Eastern hours, application deadline 2026-12-06
+Source: https://www.linkedin.com/jobs/view/4493639771/ (Lumenalta, remote LATAM, deadline 2026-12-06, LinkedIn, read 2026-11-24)

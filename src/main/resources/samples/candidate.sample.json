@@ -1,0 +1,15 @@
+{
+  "name": "Alex Rivera",
+  "email": "alex.rivera@example.com",
+  "phone_digits": "155501002030",
+  "current_employer": "Northwind Labs",
+  "employers": [
+    "Northwind Labs",
+    "Bluefin Systems",
+    "Cobalt Retail",
+    "Tandem Travel"
+  ],
+  "name_variants": [
+    "Alex Rivera"
+  ]
+}

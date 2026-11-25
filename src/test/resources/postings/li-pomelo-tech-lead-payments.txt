@@ -1,0 +1,7 @@
+Title: Tech Lead - Real Time Payments
+Min years: 7
+Min lead years: 1
+Knockout: Java, payments
+Required: Java, microservices, distributed systems, event-driven, AWS, CI/CD, git, observability, tracing, incident response, payments, fintech, software architecture, one-on-ones, hiring, code review, ai-assisted development, claude code, stakeholder management
+Nice to have: Go
+Source: https://www.linkedin.com/jobs/view/4490852057/ (Pomelo, remote Buenos Aires, LinkedIn, read 2026-11-24)

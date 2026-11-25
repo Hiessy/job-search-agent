@@ -1,0 +1,45 @@
+# Database only (for running the app from your IDE or with mvn spring-boot:run):
+#   docker compose up -d db
+# Database and app (Ollama keeps running on the host):
+#   docker compose --profile app up -d --build
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: jobagent
+      POSTGRES_USER: jobagent
+      POSTGRES_PASSWORD: jobagent
+    ports:
+      - "127.0.0.1:${JOBAGENT_DB_PORT:-5432}:5432"
+    volumes:
+      - jobagent-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U jobagent -d jobagent"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  app:
+    profiles: ["app"]
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      JOBAGENT_DB_URL: jdbc:postgresql://db:5432/jobagent
+      OLLAMA_BASE_URL: http://host.docker.internal:11434
+      JOBAGENT_PROVIDER: ${JOBAGENT_PROVIDER:-ollama}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      # Your own CV as text, mounted read-only from ./data (git-ignored):
+      JOBAGENT_CV_PATH: ${JOBAGENT_CV_PATH:-classpath:samples/cv.sample.txt}
+      JOBAGENT_FACTS_PATH: ${JOBAGENT_FACTS_PATH:-classpath:samples/candidate.sample.json}
+    volumes:
+      - ./data:/data:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "127.0.0.1:8080:8080"
+
+volumes:
+  jobagent-db:

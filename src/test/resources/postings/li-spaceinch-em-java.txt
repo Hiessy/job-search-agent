@@ -1,0 +1,8 @@
+Title: Engineering Manager (Hands-On / Java)
+Min years: 7
+Min lead years: 2
+Knockout: Java, Spring Boot, English
+Required: Java, Spring Boot, microservices, PostgreSQL, Docker, CI/CD, Kubernetes, software architecture, mentoring, client-facing, stakeholder management, ai-assisted development, code review
+Nice to have: AWS, GCP, performance tuning
+Constraints: B2B contract, occasional travel for company retreats
+Source: https://www.linkedin.com/jobs/view/4492617336/ (Space Inch, remote Argentina, USD 7.0-8.5k/month B2B, LinkedIn, read 2026-11-24)

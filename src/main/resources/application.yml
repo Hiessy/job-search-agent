@@ -1,0 +1,111 @@
+# Every value can be overridden by an environment variable (see README). API keys come from the
+# environment only; never put one in this file.
+
+server:
+  address: ${JOBAGENT_BIND:127.0.0.1}   # local only by default: the API has no login
+  port: ${JOBAGENT_PORT:8080}
+
+spring:
+  application:
+    name: job-search-agent
+  threads:
+    virtual:
+      enabled: true
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+    default-property-inclusion: non_null
+  datasource:
+    url: ${JOBAGENT_DB_URL:jdbc:postgresql://localhost:5432/jobagent}
+    username: ${JOBAGENT_DB_USER:jobagent}
+    password: ${JOBAGENT_DB_PASSWORD:jobagent}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+
+  ai:
+    model:
+      chat: ${JOBAGENT_PROVIDER:ollama}   # ollama | anthropic | openai
+      embedding: none
+      image: none
+      moderation: none
+      audio:
+        speech: none
+        transcription: none
+    chat:
+      client:
+        enabled: false   # the agent drives the ChatModel directly
+    retry:
+      # Spring AI's default is 10 attempts with backoff up to 3 minutes: a stopped Ollama would hang a run
+      # for about 20 minutes. Fail fast instead; the run reports MODEL_ERROR.
+      max-attempts: 2
+      backoff:
+        initial-interval: 1s
+        multiplier: 2
+        max-interval: 5s
+    ollama:
+      base-url: ${OLLAMA_BASE_URL:http://localhost:11434}
+      chat:
+        options:
+          model: ${OLLAMA_MODEL:qwen2.5:7b}
+          temperature: 0.0
+          num-ctx: 8192
+    anthropic:
+      api-key: ${ANTHROPIC_API_KEY:}
+      chat:
+        options:
+          model: ${CLAUDE_MODEL:claude-opus-5-5}
+          max-tokens: 2048
+    openai:
+      api-key: ${OPENAI_API_KEY:}
+      chat:
+        options:
+          model: ${OPENAI_MODEL:gpt-5-mini}
+          temperature: 1.0   # GPT-5 models only accept the default
+    mcp:
+      server:
+        name: job-search-agent
+        version: 0.1.0
+        type: SYNC
+        protocol: STREAMABLE   # MCP endpoint: http://localhost:8080/mcp
+        instructions: >-
+          Job-search tools for one candidate: read a posting, score the CV against it with deterministic ATS
+          rules, draft a grounded note, and request to track an application (a person must approve it).
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics, prometheus
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    com.hiessy.jobagent: INFO
+
+jobagent:
+  cv:
+    path: ${JOBAGENT_CV_PATH:classpath:samples/cv.sample.txt}
+    facts-path: ${JOBAGENT_FACTS_PATH:classpath:samples/candidate.sample.json}
+    current-year: 0
+  agent:
+    max-steps: 8
+    max-history-messages: 40
+  guardrails:
+    max-tool-calls-per-run: 10
+    allowed-tools:
+      - fetch_job_posting
+      - score_cv
+      - draft_cover_note
+      - save_application
+      - list_applications
+      - compare_cv_variants
+  fetch:
+    timeout: 20s
+    max-bytes: 3000000
+    max-chars: 20000
+    allow-private-hosts: false
